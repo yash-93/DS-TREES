@@ -7,10 +7,10 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    // Input integer except 0s to print height of each node
-    int find_heights;
-    cin >> find_heights;
-    createTree(find_heights);
+    // Input 1 1 to print height of each node and traversals.
+    int find_heights, traverse;
+    cin >> find_heights >> traverse;
+    createTree(find_heights, traverse);
 
     return 0;
 }
