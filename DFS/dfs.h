@@ -7,5 +7,6 @@ struct Node{
     }
 };
 
-void createTree(int find_heights, int traverse);
+void createTree(int find_heights, int traverse, int lcaparam);
 void traversal(struct Node* node);
+void lca(struct Node* node, int a, int b);

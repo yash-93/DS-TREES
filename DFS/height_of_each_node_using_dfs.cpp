@@ -10,7 +10,7 @@ void heightOfNodes(struct Node* node, int height){
     heightOfNodes(node->right, height+1);
 }
 
-void createTree(int find_heights, int traverse){
+void createTree(int find_heights, int traverse, int lcaparam){
     struct Node* root = new Node(1);
     root->left = new Node(2);
     root->right = new Node(3);
@@ -24,6 +24,13 @@ void createTree(int find_heights, int traverse){
 
     if (traverse == 1){
         traversal(root);
+    }
+
+    if (lcaparam == 1){
+        int a, b;
+        cout << "\n\nEnter the two nodes : ";
+        cin >> a >> b;
+        lca(root, a, b);
     }
 
     if (traverse != 1 || find_heights != 1){

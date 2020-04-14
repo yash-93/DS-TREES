@@ -4,13 +4,10 @@ using namespace std;
 
 int main()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-
     // Input 1 1 to print height of each node and traversals.
-    int find_heights, traverse;
-    cin >> find_heights >> traverse;
-    createTree(find_heights, traverse);
+    int find_heights, traverse, lcaparam;
+    cin >> find_heights >> traverse >> lcaparam;
+    createTree(find_heights, traverse, lcaparam);
 
     return 0;
 }
